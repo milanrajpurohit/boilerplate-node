@@ -1,0 +1,123 @@
+body, html{
+    height: 100%;
+}
+body{margin: 0;padding: 0;font-family: 'Helvetica Neue', Helvetica;}
+ul, li {
+    margin:0;
+    padding:0;
+    list-style-type:none;
+}
+
+#pswd_info {
+    /*position:absolute;*/
+    /*bottom:-75px;*/
+    /*bottom: -115px\9; !* IE Specific *!*/
+    /*right:55px;*/
+    /*width:250px;*/
+    padding:15px;
+    background:#fefefe;
+    font-size:.875em;
+    border-radius:5px;
+    box-shadow:0 1px 3px #ccc;
+    border:1px solid #ddd;
+}
+
+#pswd_info h4 {
+    margin:0 0 10px 0;
+    padding:0;
+    font-weight:normal;
+}
+
+#pswd_info::before {
+    content: "\25B2";
+    position:absolute;
+    top:-12px;
+    left:45%;
+    font-size:14px;
+    line-height:14px;
+    color:#ddd;
+    text-shadow:none;
+    display:block;
+}
+.invalid {
+    background:url(../images/invalid.png) no-repeat 0 50%;
+    padding-left:22px;
+    line-height:24px;
+    color:#ec3f41;
+}
+.valid {
+    background:url(../images/valid.png) no-repeat 0 50%;
+    padding-left:22px;
+    line-height:24px;
+    color:#3a7d34;
+}
+#pswd_info {
+    display:none;
+}
+.container {
+    margin: 0;
+    padding: 0;
+}
+.resetpassbox{
+    text-align: center;
+    margin: 0;
+    background: #3ccfe5;
+    background: -moz-linear-gradient(top, #3ccfe5 0%, #64d29f 50%, #80d573 100%);
+    background: -webkit-linear-gradient(top, #3ccfe5 0%,#64d29f 50%,#80d573 100%);
+    background: linear-gradient(to bottom, #3ccfe5 0%,#64d29f 50%,#80d573 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3ccfe5', endColorstr='#80d573',GradientType=0 );
+    padding: 0px 15px 0px;
+    width: calc(100% - 30px);
+    float: left;
+    display: flex;
+    min-height: 100%;
+    align-items: center;
+}
+#passwordreset{
+
+    width: 320px; padding: 40px 20px;
+    display: block;
+    margin: 10% auto;
+    border-radius:3px;
+
+    background: #d23cb5;
+    background: -moz-linear-gradient(top, #d23cb5 1%, #26caf4 100%);
+    background: -webkit-linear-gradient(top, #d23cb5 1%,#26caf4 100%);
+    background: linear-gradient(to bottom, #d23cb5 1%,#26caf4 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d23cb5', endColorstr='#26caf4',GradientType=0 );
+}
+.panel-info{
+
+}
+.panel-title{ font-size: 24px; padding-bottom: 25px;}
+#signupform{width: 100%; display: block; text-align: left;}
+.form-group{width: 100%; display: block; text-align: left;margin-bottom: 15px;}
+.form-group label{padding-bottom: 6px;display: block;}
+.form-group input{width: calc(100% - 25px);;height: 30px; border-radius: 3px; border: none;
+    padding:6px 12px; font-size: 12px;
+}
+.form-group .btn{padding: 8px 25px; border: none; background-color: #8FD65D; font-size: 16px; color: #FFF;}
+
+
+.red
+{
+    background-color:red;
+}
+button:disabled {
+  opacity: 0.7;
+}
+@media only screen and (max-width: 480px)
+{
+    #passwordreset
+    {
+        width: 80%;
+    }
+    .panel-title {
+        font-size: 20px;
+    }
+}
+
+
+
+
+
